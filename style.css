@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #854632;
+  --primary-margin: 0.5em 0;
+}
+
+body {
+  background: #f3e4d9;
+  color: #5f564d;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+}
+
+.title,
+.titles {
+  font-family: "Young Serif", serif;
+}
+
+.titles {
+  color: var(--primary-color);
+  margin: var(--primary-margin);
+}
+
+.main-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6em 0;
+}
+
+.main-content {
+  width: 50%;
+  height: auto;
+  background: #fff;
+  padding: 2em;
+  border-radius: 20px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.title {
+  color: black;
+  margin: var(--primary-margin);
+  font-weight: normal;
+}
+
+.Preparation-title {
+  color: #7b284f;
+  margin-bottom: 0.5em;
+}
+.preparation-time-info {
+  margin: 1.6em 0;
+  background: #fff0fc;
+  padding: 1.5em;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.preparation-time-info span,
+.instruction span {
+  font-weight: bold;
+  color: #4e4e4e;
+}
+
+ul,
+ol {
+  padding-left: 1.5em;
+}
+
+li {
+  padding-left: 1em;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+ol li::marker,
+ul li::marker {
+  color: var(--primary-color);
+}
+ul li::marker {
+  color: var(--primary-color);
+}
+
+ol li::marker {
+  font-weight: bold;
+}
+
+hr {
+  border-top: 1px solid #cccccc;
+  margin: 2em 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid #cccccc;
+}
+
+th {
+  padding-left: 1.5em;
+  font-weight: 500;
+}
+
+th,
+td {
+  text-align: left;
+  padding-block: 0.9em;
+}
+
+td {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+tr:last-child {
+  border: none;
+}
+
+@media screen and (width <= 65.5em) {
+  .main-container {
+    margin: 0;
+  }
+
+  .main-content {
+    width: 100vw;
+    border-radius: 0;
+  }
+
+  img {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .main-container {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .main-content {
+    width: 100%;
+    height: auto;
+    padding: 0em;
+  }
+  .main-content div,
+  .disc {
+    padding: 0 1.5em;
+    line-height: 1.3em;
+  }
+  .title {
+    padding-left: 0.8em;
+  }
+  .preparation-time-info {
+    margin: 1em 1.5em;
+  }
+
+  .preparation-time-info div {
+    padding: 1em 0;
+  }
+}
