@@ -9,7 +9,7 @@
 
 :root {
   --primary-color: #854632;
-  --primary-margin: 0.5em 0;
+  --primary-margin: 0.9em 0 0.4em 0;
 }
 
 body {
@@ -22,6 +22,8 @@ body {
 .title,
 .titles {
   font-family: "Young Serif", serif;
+  font-weight: 300;
+  word-spacing: 1.5px;
 }
 
 .titles {
@@ -35,35 +37,36 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 6em 0;
+  margin: 7.8em 0;
 }
 
 .main-content {
   width: 50%;
   height: auto;
   background: #fff;
-  padding: 2em;
+  padding: 2.3em;
   border-radius: 20px;
 }
 
 img {
   width: 100%;
+  height: 100%;
   border-radius: 10px;
 }
 
 .title {
   color: black;
   margin: var(--primary-margin);
-  font-weight: normal;
+  font-size: 2.5rem;
 }
 
 .Preparation-title {
   color: #7b284f;
-  margin-bottom: 0.5em;
+  margin: 0.7em 0;
 }
 .preparation-time-info {
   margin: 1.6em 0;
-  background: #fff0fc;
+  background: #fff7fc;
   padding: 1.5em;
   border-radius: 15px;
   align-items: center;
@@ -75,6 +78,13 @@ img {
   color: #4e4e4e;
 }
 
+.nutrition {
+  margin: -0.5em 0 0 0;
+}
+
+.nutrition-para {
+  margin: 1.2em 0;
+}
 ul,
 ol {
   padding-left: 1.5em;
@@ -83,7 +93,7 @@ ol {
 li {
   padding-left: 1em;
   line-height: 1.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.6em;
 }
 
 ol li::marker,
@@ -100,7 +110,7 @@ ol li::marker {
 
 hr {
   border-top: 1px solid #cccccc;
-  margin: 2em 0;
+  margin: 2.3em 0 2em 0;
 }
 
 table {
@@ -134,10 +144,10 @@ tr:last-child {
 @media screen and (width <= 65.5em) {
   .main-container {
     margin: 0;
+    width: 100vw;
   }
 
   .main-content {
-    width: 100vw;
     border-radius: 0;
   }
 
@@ -164,6 +174,7 @@ tr:last-child {
     line-height: 1.3em;
   }
   .title {
+    font-size: 2em;
     padding-left: 0.8em;
   }
   .preparation-time-info {
